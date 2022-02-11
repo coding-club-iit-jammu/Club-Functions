@@ -20,7 +20,7 @@ Alumni = '779048768145457173'
 
 def getAllMembers(guild: str) -> List[Dict]:
     endpoint = "https://discordapp.com/api/guilds/{}/members".format(guild)
-    headers = {"Authorization" : f"Bot {'NzM0NzY5MzE4MjIyNDk1NzQ1.XxWhQA.a8xvcj4DfM71CpPCj1VUiZu2Y8I'}"}
+    headers = {"Authorization" : f"Bot {os.environ['DISCORD_BOT_TOKEN']}"}
 
     params = {
         "limit": 200
